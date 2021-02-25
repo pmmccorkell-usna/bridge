@@ -1,0 +1,1 @@
+ wsl bash /mnt/c/python_code/capstones/bridge/wsl_script

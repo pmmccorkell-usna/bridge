@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Script Started"
+mosquitto &
+sleep 5
+python3 /mnt/c/python_code/Qualisys_MQTT/mqtt_Qualisys_pub.py &
+sleep 2
+python3 /mnt/c/python_code/capstones/bridge/sub_log.py
+
