@@ -15,7 +15,7 @@ from random import randint
 filename=default_directory + datetime.now().strftime('qtm_mqtt_%Y%m%d_%H:%M:%s.log')
 log = logging.getLogger()
 log.setLevel(logging.INFO)
-format = logging.Formatter('%(asctime)s, %(message)s')
+format = logging.Formatter('%(message)s')
 file_handler = logging.FileHandler(filename)
 file_handler.setLevel(logging.INFO)
 file_handler.setFormatter(format)
@@ -74,13 +74,13 @@ def setup_subscription():
 		else:
 			client.on_message=log_message
 
-		# Subscribes to all the topics defined at top.
+		# Subscribes to all the topics defined in "server.py"
 		for i in topiclist:
 			client.subscribe(i+'/'+'#')
 
 		# Start the mqtt subscription.
 		client.loop_start()
-		log.info('mqtt subscription script started')
+		#log.info('mqtt subscription script started')
 		check=1
 	except:
 		print("didn't connect")
