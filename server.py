@@ -22,7 +22,8 @@ default_directory='/mnt/c/python_code/capstones/bridge/log/'
 
 topiclist=[
 	'test',
-    'TestBoat/orientation'
+    'TestBoat/orientation',
+	'TestBoat/controller'
 ]
 
 
