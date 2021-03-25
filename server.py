@@ -5,7 +5,7 @@
 server='127.0.0.1'	# loopback
 # server="172.30.35.102"	# Pat's desk
 # server="172.30.38.181"	# SURF nonet
-# server="192.168.5.4"      # SURFnet
+# server="192.168.5.4"      # SURFnet above water cameras
 
 
 # pick a unique clientname to prevent collisions with other clients

@@ -83,3 +83,18 @@ def process():
 	}
 
 	topic = 'TestBoat/controller'
+	client.pub(topic,dumps(message))
+	trash()
+
+def runit():
+	connected=0
+	try:
+		client.connect()
+		connected=1
+	except:
+		print("mqtt failed to connect")
+	while(connected):
+		process()
+		sleep(0.003)
+
+
