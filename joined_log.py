@@ -51,7 +51,7 @@ voltages = {
 }
 def gather_V(message):
 	global voltages
-	buffer = json.loads(data.payload.decode())
+	buffer = json.loads(message.payload.decode())
 	for key in voltages:
 		voltages[key].append(buffer[key])
 
@@ -61,7 +61,7 @@ def log_message(message):
 	# log.info('message rx')
 	# log.info(str(message.topic)+', '+str(message.payload))
 	# buffer = {}
-	buffer = json.loads(data.payload.decode())
+	voltages = json.loads(message.payload.decode())
 	data['h'] = buffer['h']
 	for key in voltages:
 		data[key] = mean(voltages[key])
