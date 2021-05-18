@@ -1,3 +1,8 @@
+# Patrick McCorkell
+# March 2021
+# US Naval Academy
+# Robotics and Control TSD
+#
 #
 # IPs for different MQTT server Pis.
 # Only uncomment one, depending on which server you desire.

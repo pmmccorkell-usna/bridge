@@ -1,3 +1,8 @@
+# Patrick McCorkell
+# March 2021
+# US Naval Academy
+# Robotics and Control TSD
+
 from time import sleep
 import paho.mqtt.client as MQTT
 import logging
